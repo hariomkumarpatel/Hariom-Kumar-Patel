@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav><a href="index.html">Home</a></nav>
+
+<section class="section fade-in">
+    <h2>My Photos</h2>
+    <div id="gallery"></div>
+</section>
+
+<script src="js/firebase.js"></script>
+<script>
+firebase.database().ref("gallery").on("value", snap => {
+    let data = snap.val();
+    let html = "";
+    for(let key in data){
+        html += `<img src="${data[key]}" style="width:200px;margin:10px;border-radius:10px;">`;
+    }
+    document.getElementById("gallery").innerHTML = html;
+});
+</script>
+
+</body>
+</html>
