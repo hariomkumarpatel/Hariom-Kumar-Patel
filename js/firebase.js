@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "YOUR_KEY",
-    authDomain: "YOUR_APP.firebaseapp.com",
-    databaseURL: "YOUR_URL",
-    projectId: "YOUR_ID",
-    storageBucket: "YOUR_BUCKET",
+    apiKey: "AIzaSyDyTs5_LGZJgKlUyPFH_cqLHaIsxHXG4XE",
+    authDomain: "https://hdp-tubee-default-rtdb.firebaseio.com",
+    databaseURL: "https://console.firebase.google.com/project/hdp-tubee/database/hdp-tubee-default-rtdb/data/~2F",
+    projectId: "hdp-tubee",
+    storageBucket: "hdp-tubee.appspot.com",
 };
 
 firebase.initializeApp(firebaseConfig);
